@@ -1,0 +1,11 @@
+lib/
+plugins/
+templates/
+themes/
+tools/
+
+# temp files directories
+cache/
+log/
+*.swp
+.DS_Store
