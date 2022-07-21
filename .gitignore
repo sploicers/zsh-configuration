@@ -3,6 +3,7 @@ plugins/
 templates/
 themes/
 tools/
+local/
 
 # temp files directories
 cache/
