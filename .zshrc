@@ -14,11 +14,14 @@ HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode reminder
 
 plugins=(git dirhistory copypath zsh-autosuggestions)
-
 source $ZSH/oh-my-zsh.sh
 
+# Machine-specific, non-source controlled config from /local dir
+for file in $ZSH/local/*.zsh
+do
+	source $file
+done
+
 # User configuration
-source "$HOME/.cargo/env"
-export PATH="$HOME/.cargo/bin:$PATH"
 export ARCHFLAGS="-arch x86_64"
 
