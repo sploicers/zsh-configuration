@@ -29,9 +29,9 @@ local return_code="%(?..%F{red}%? ↵%f)"
 
 local user_host="${PR_USER}%F{cyan}@${PR_HOST}"
 local current_dir="%B%F{blue}%~%f%b"
-local git_branch='$(git_prompt_info)'
+local vcs_branch='$(git_prompt_info)$(hg_prompt_info)'
 
-PROMPT="╭─${user_host} ${current_dir} ${git_branch}
+PROMPT="╭─${user_host} ${current_dir} ${vcs_branch}
 ╰─$PR_PROMPT "
 RPROMPT="${return_code}"
 
@@ -39,5 +39,10 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%F{yellow}‹"
 ZSH_THEME_GIT_PROMPT_SUFFIX="› %f"
 ZSH_THEME_RUBY_PROMPT_PREFIX="%F{red}‹"
 ZSH_THEME_RUBY_PROMPT_SUFFIX="›%f"
+
+ZSH_THEME_HG_PROMPT_PREFIX="%{$fg_bold[magenta]%}hg:(%{$fg[red]%}"
+ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_HG_PROMPT_DIRTY="%{$fg[magenta]%}) %{$fg[yellow]%}✗%{$reset_color%}"
+ZSH_THEME_HG_PROMPT_CLEAN="%{$fg[magenta]%})"
 
 }
