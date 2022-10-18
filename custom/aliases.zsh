@@ -6,6 +6,7 @@ alias lsa="ls -a"
 # mercurial
 alias hd="hg diff"
 alias hs="hg stat"
+alias ha="hg add"
 alias hc="hg ci"
 alias hcm="hg ci -m"
 alias hl="hg pull"
@@ -30,6 +31,10 @@ alias yb="yarn build"
 alias yt="yarn test"
 alias ytu="yarn test-unit"
 alias yti="yarn test-integration"
+
+# Docker
+alias db="docker build . -t"
+alias dr="docker run --rm"
 
 # Docker Compose
 alias dcu="docker compose up"
