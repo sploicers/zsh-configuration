@@ -16,8 +16,8 @@ alias hml"hg merge --tool internal:local"
 alias hmr="hg merge --tool internal:theirs"
 alias huc="hg up -C"
 alias hucd="hg up -C default"
-alias hrma="hg rm $(hg stat | grep ! | cut -c 3-)"
-alias hgcc="hg log -b $(hb) -T '\n' | wc -l"
+alias hrma="hg rm \$(hg stat | grep ! | cut -c 3-)"
+alias hgcc="hg log -b \$(hb) -T '\n' | wc -l"
 
 # Cargo/Rust
 alias cb="cargo build"
