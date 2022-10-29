@@ -1,13 +1,11 @@
-PATH=$HOME/bin:/usr/local/bin:$PATH
+
 
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="gnzh"
+PATH=$HOME/bin:/usr/local/bin:$PATH
 
 DISABLE_AUTO_TITLE="true"
-
-# Use hyphen-insensitive completion. Case-sensitive completion must be off. 
-# _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
 # Remind about available updates

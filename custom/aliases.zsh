@@ -1,7 +1,6 @@
 # overrides of built-in oh-my-zsh / git plugin aliases
 alias gb="git --no-pager branch"
 alias gs="git status"
-alias lsa="ls -a"
 
 # mercurial
 alias hd="hg diff"
@@ -48,6 +47,7 @@ alias aliasg="alias | grep -i"
 alias reload="exec zsh && clear"
 alias latest="git -C $ZSH pull && reload"
 alias lsg="ls | grep -i"
+alias lsa="ls -a"
 alias cat="ccat --bg=dark"
 alias kubetcl="minikube kubectl --"
 alias repos="cd ~/repos"
