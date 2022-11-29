@@ -41,6 +41,8 @@ alias cr="cargo run"
 # Yarn/Node
 alias ys="yarn start"
 alias yb="yarn build"
+alias ya="yarn add"
+alias yad="yarn add -D"
 alias yt="yarn test"
 alias ytu="yarn test-unit"
 alias yti="yarn test-integration"
