@@ -23,9 +23,10 @@ alias hu="hg up"
 alias huc="hg up -C"
 alias hucd="hg up -C default"
 alias hgr="hg strip --keep --rev ."
-alias hrma="hg rm \$(hg stat | grep ! | cut -c 3-)"
+alias hrma="hg rm \$(hs | grep ! | cut -c 3-)"
 alias hgcc="hg log -b \$(hb) -T '\n' | wc -l"
-alias hi="hg import --no-commit"
+alias hi="hg import --no-commit \$(hb).patch"
+alias he="hd > \$(hb).patch"
 
 # .NET
 alias dnb="dotnet build"
